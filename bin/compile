@@ -289,8 +289,8 @@ if [ "$(<${vendorJSON} jq -r '.heroku.sync')" != "false" ]; then
 fi
 massagePkgSpecForVendor
 
-step "Running: go install -v ${FLAGS[@]} ${pkgs}"
-go install -v "${FLAGS[@]}" ${pkgs} 2>&1
+# step "Running: go install -v ${FLAGS[@]} ${pkgs}"
+# go install -v "${FLAGS[@]}" ${pkgs} 2>&1
 step "Running Makefile"
 make
 
